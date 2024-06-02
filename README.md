@@ -2,6 +2,7 @@
 
 This repository was developed as part of an Electronic Engineering Bachelor Thesis. The [report](report.pdf) serves as a design and maintainance document and contains useful information and diagrams explaining the different software mechanisms.
 
+
 ## Setup
 
 ### Windows (WSL)
