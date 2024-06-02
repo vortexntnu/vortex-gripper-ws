@@ -1,0 +1,16 @@
+/twig_teleop:
+  ros__parameters:
+    gripper_max_speed: 1.0
+    jog_frame_id: base_link
+    joy:
+      axis:
+        gripper: 3
+        shoulder: 1
+        wrist: 0
+      button:
+        activate_servos: 8
+        deadmanswitch: 7
+      deadband: 0.2
+    shoulder_max_speed: 1.0
+    use_sim_time: false
+    wrist_max_speed: 1.0

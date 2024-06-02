@@ -1,0 +1,19 @@
+version: "3"
+services:
+  twig:
+    build:
+      context: .
+      dockerfile: dockerfiles/twig/Dockerfile
+    container_name: twig
+    ports:
+      - "8765:8765"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /mnt/wslg:/mnt/wslg
+      - /dev/shm/:/dev/shm
+      - /dev/input/:/dev/input/
+    environment:
+      - DISPLAY
+      - WAYLAND_DISPLAY
+      - XDG_RUNTIME_DIR
+      - PULSE_SERVER
