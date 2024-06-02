@@ -3,25 +3,24 @@
 
 #include <Arduino.h>
 
-class Timer
-{
-  unsigned long startTime = 0;
+class Timer {
+    unsigned long startTime = 0;
 
 public:
-  void reset()
-  {
-    startTime = millis();
-  }
+    void reset()
+    {
+        startTime = millis();
+    }
 
-  unsigned long elapsed()
-  {
-    return millis() - startTime;
-  }
+    unsigned long elapsed()
+    {
+        return millis() - startTime;
+    }
 
-  bool isFinished(unsigned long duration)
-  {
-    return elapsed() >= duration;
-  }
+    bool isFinished(unsigned long duration)
+    {
+        return elapsed() >= duration;
+    }
 };
 
 #endif
