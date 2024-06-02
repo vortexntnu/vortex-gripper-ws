@@ -53,7 +53,12 @@ void resetCommand()
 
 bool verify_session_id()
 {
-  return twigCommand.sessionId == twigState.sessionId;
+  if (twigCommand.sessionId == twigState.sessionId)
+  {
+    return true;
+  }
+  Serial.println("Session ID mismatch");
+  return false;
 }
 
 void updateHardwareConfig() {
