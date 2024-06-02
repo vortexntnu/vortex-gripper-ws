@@ -195,7 +195,8 @@ void updateConnectionTimer()
 {
   if ((millis() - connectionTimer) > connectionTimeout)
   {
-    resetCommand();
+    // TODO: Find out why the bus keeps timing out
+    // resetCommand();
     Serial.println("Connection timeout");
   }
 }
